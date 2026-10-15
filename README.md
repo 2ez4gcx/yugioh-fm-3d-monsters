@@ -11,8 +11,6 @@ This is a free, non-commercial fan project, not affiliated with or endorsed by K
 game data**: you need your own disc image, and the patch only writes the new code and a few changed table values
 onto it.
 
-[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=khuongkid92%40gmail.com&currency_code=USD)
-
 ## Two patches — pick one
 
 | Patch | Contents |
@@ -51,6 +49,11 @@ Files in this repository:
   game's own models: the ones it normally shows only in the 3D battle animation. All 621 monster cards have one.
 - The monster you interacted with last (summoned, flipped, attacked with or attacked) is the live, animated model.
   The others show a still 3D image of their model.
+
+> **Note:** because of the PlayStation's hardware limits (memory, video memory and processing power), only **one**
+> model can be animated at a time: the monster you interacted with last. The other monsters are still shown in 3D,
+> but they do not move.
+
 - The models appear in the normal angled duel view during your turn. The overhead view, the card close-ups and the
   battle animations look as in the original game.
 - Everything the patch borrows from the console's video memory during a duel is put back when the duel ends, so the
@@ -146,6 +149,8 @@ SHA-256 of the patched `.bin`:
 
 ## Known limitations
 
+- Only the monster you interacted with last is animated (PlayStation hardware limits); the others are shown in 3D
+  without moving.
 - At most 8 monsters are shown in 3D at the same time (the live model + 7 still images). When more monsters are face
   up, the others stay flat cards.
 - A large monster in the front row can be cut off at the edges of its still image (each one is a 64×64 picture). The
@@ -159,6 +164,12 @@ SHA-256 of the patched `.bin`:
 Open an issue on this repository with: the emulator (name and version) or console, which patch you used, the SHA-256
 of your patched `.bin`, and a screenshot if possible.
 
+## Credits
+
+- Patch by **KhuongKid**.
+- New passwords from Yugipedia and YGOPRODeck.
+- *Yu-Gi-Oh! Forbidden Memories* © Konami. Yu-Gi-Oh! © Kazuki Takahashi.
+
 ## Support
 
 The patch is free. If you enjoy it and want to support the work, you can donate with PayPal:
@@ -166,9 +177,3 @@ The patch is free. If you enjoy it and want to support the work, you can donate 
 [![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=khuongkid92%40gmail.com&currency_code=USD)
 
 PayPal: **khuongkid92@gmail.com**
-
-## Credits
-
-- Patch by **KhuongKid**.
-- New passwords from Yugipedia and YGOPRODeck.
-- *Yu-Gi-Oh! Forbidden Memories* © Konami. Yu-Gi-Oh! © Kazuki Takahashi.
